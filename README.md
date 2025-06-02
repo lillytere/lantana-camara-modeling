@@ -4,7 +4,7 @@ Code for predicting spatio-temporal patterns of Lantana camara using satellite a
 
 ## Contents
 
-- `main.js` – GEE script for data preprocessing, training, and classification
+- `main.js` – GEE script for habitat suitability modelling
 - `README.md` – Project overview
 
 
