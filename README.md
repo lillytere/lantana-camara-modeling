@@ -1,4 +1,4 @@
-# Code for predicting spatio-temporal patterns of *Lantana camara* using satellite and in situ data
+# Code for predicting spatio-temporal patterns of *Lantana camara*
 
 Based on the manuscript:  
 **Synergistic Use of Satellite, Legacy, and In Situ Data to Predict Spatio-Temporal Patterns of the Invasive *Lantana camara* in a Savannah Ecosystem**
