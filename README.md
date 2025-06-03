@@ -35,9 +35,9 @@ This repository includes:
 These asset collections are also  part to the original script:
 
 - **Lantana Presence Points**:  
-  [Preprocessed imagery](https://code.earthengine.google.com/?asset=users/lillyschell7/Daten_aktuell/Lat_Long_lantana)
+  [Lantana Points](https://code.earthengine.google.com/?asset=users/lillyschell7/Daten_aktuell/Lat_Long_lantana)
 - **Akagera National Park Boundary**:  
-  [Preprocessed imagery](https://code.earthengine.google.com/?asset=users/lillyschell7/Daten_aktuell/anp_park_boundary)
+  [AOI](https://code.earthengine.google.com/?asset=users/lillyschell7/Daten_aktuell/anp_park_boundary)
 - **Sentinel-1 (SAR)**:  
   [Speckle-filtered SAR data](https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered)
 
@@ -45,7 +45,7 @@ These asset collections are also  part to the original script:
   [Preprocessed imagery](https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral)
   
 - **Terra climate dataset (preprocessed dataset 2015–2023)**:  
-  [Preprocessed imagery](https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral)
+  [Preprocessed climate data](https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral)
 
 
 ---
