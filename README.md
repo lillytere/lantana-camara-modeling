@@ -3,7 +3,7 @@
 Based on the manuscript:  
 **Synergistic Use of Satellite, Legacy, and In Situ Data to Predict Spatio-Temporal Patterns of the Invasive *Lantana camara* in a Savannah Ecosystem**
 
-## Notes  
+## Introduction  
 This project includes multiple scripts and components. Only the main script is provided here, but you can access the corresponding Earth Engine repositories and publicly available assets via the links below.  
 The code references Earth Engine assets (e.g., image collections, shapefiles, training data). These are not all public by default.
 
