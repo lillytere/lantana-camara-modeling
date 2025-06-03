@@ -11,7 +11,7 @@ To use the script with your own data, please:
 - Replace asset paths (e.g., AOI, training data, imagery)
 - Adjust date ranges, study area, and model parameters as needed
 
-## ⚠️ Important Note on Data Protection
+## Note on Data Protection
 
 Please note that the **road predictor variable** originally included in the SDM model has been **removed from this script** for **data protection reasons**.
 
@@ -36,7 +36,7 @@ These asset collections are also part of the original script:
 
 - **Lantana Presence Points**: `Lantana Points`  
 - **Akagera National Park Boundary**: `AOI`  
-- **Sentinel-1 (SAR)**: Speckle-filtered SAR data  
+- **Sentinel-1 (SAR) ((preprocessed dataset 2015–2023)**: Speckle-filtered SAR data  
   - 2015: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_15
   - 2016: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_16
   - 2017: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_17
