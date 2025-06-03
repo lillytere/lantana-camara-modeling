@@ -40,6 +40,9 @@ These asset collections are also  part to the original script:
 
 - **Sentinel-2 (spectral composites 2015–2023)**:  
   [Preprocessed imagery](https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral)
+  
+- **Terra climate dataset (preprocessed dataset 2015–2023)**:  
+  [Preprocessed imagery]([https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral])
 
 ---
 
