@@ -2,6 +2,7 @@
 // - AOI (area of interest)
 // - Date range 
 // - Asset paths for input imagery and training data
+/!!The road predictor asset has been taken out of this script for data protection reasons!!
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Section 1 - Species data
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -67,10 +68,10 @@ var terra= ee.Image('users/lillyschell7/TERRA_usable/Terra23_resampled_scaled')
 print(terra);
 ////////roads/////////////
 
-var roads_buffer= ee.Image('users/lillyschell7/Daten_aktuell/Roads_buffer');
-var roads_buffer = roads_buffer.select(['b1']).rename(['roads_buffer']);
+//var roads_buffer= ee.Image('users/******');
+//var roads_buffer = roads_buffer.select(['b1']).rename(['roads_buffer']);
 
-print(roads_buffer);
+//print(roads_buffer);
 ///////////soil////////// 
 
 var soil= ee.Image('users/lillyschell7/soil_data/Combined_Soil_Data');
@@ -117,7 +118,7 @@ var s1 = ee.Image('users/lillyschell7/Sen1_speckle_filtered/S1_23');
 print (s1);
 
 /////////////Combine bands into a single multi-band image/////////////
-var predictors = terra.addBands(terrain_indices).addBands(veg_indices).addBands(roads_buffer).addBands(soil).addBands(LCC).addBands(s1);
+var predictors = terra.addBands(terrain_indices).addBands(veg_indices).addBands(soil).addBands(LCC).addBands(s1);
 
 // Add the binary masks for each class to the predictors image
 predictors = predictors
@@ -140,7 +141,7 @@ print(wm);
 var predictors = predictors.updateMask(wm).clip(AOI);
 
 // Select subset of bands to keep for habitat suitability modeling
-var bands = ["roads_buffer","aet", "pet", "pr", "soil",  "tmmn", "tmmx",
+var bands = ["aet", "pet", "pr", "soil",  "tmmn", "tmmx",
 'elevation',"slope","aspect", "TPI", "TWI" ,"blue",  "green", "red", "re1", "re2", "re3", "nir", 
             "re4", "swir1", "swir2","RVI", "NDVI", "GNDVI","TVI", "SAVI_L1","SAVI_05","CCCI",
             "NDRE","Sand_TS","Clay_TS","Phosphorus_TS","Nitrogen_TS","Carbon_TS","ECEC_TS","pH_TS",
@@ -458,8 +459,8 @@ function AUCROCaccuracy(x){
 
 
 var AUCROCs = ee.List.sequence(0,ee.Number(numiter).subtract(1),1).map(AUCROCaccuracy);
-print('AUC-ROC:', AUCROCs);
-print('Mean AUC-ROC', AUCROCs.reduce(ee.Reducer.mean()));
+//print('AUC-ROC:', AUCROCs);
+//print('Mean AUC-ROC', AUCROCs.reduce(ee.Reducer.mean()));
 
 // Calculate AUC of Precision Recall Curve-Precision (PPV) 
 
@@ -479,8 +480,8 @@ function AUCPRaccuracy(x){
 }
 
 var AUCPRs = ee.List.sequence(0,ee.Number(numiter).subtract(1),1).map(AUCPRaccuracy);
-print('AUC-PR:', AUCPRs);
-print('Mean AUC-PR', AUCPRs.reduce(ee.Reducer.mean()));
+//print('AUC-PR:', AUCPRs);
+//print('Mean AUC-PR', AUCPRs.reduce(ee.Reducer.mean()));
 
 // Function to extract other metrics
 function getMetrics(x){
@@ -492,11 +493,11 @@ function getMetrics(x){
 
 // Extract sensitivity, specificity and mean threshold values///ensitivity (true positive rate) and specificity (false positive rate)
 var Metrics = ee.List.sequence(0,ee.Number(numiter).subtract(1),1).map(getMetrics);
-print('Sensitivity:', ee.FeatureCollection(Metrics).aggregate_array("TPR"));
-print('Specificity:', ee.FeatureCollection(Metrics).aggregate_array("TNR"));
+//print('Sensitivity:', ee.FeatureCollection(Metrics).aggregate_array("TPR"));
+//print('Specificity:', ee.FeatureCollection(Metrics).aggregate_array("TNR"));
 
 var MeanThresh = ee.Number(ee.FeatureCollection(Metrics).aggregate_array("cutoff").reduce(ee.Reducer.mean()));
-print('Mean threshold:', MeanThresh);
+//print('Mean threshold:', MeanThresh);
 
 
 
