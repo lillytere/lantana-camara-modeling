@@ -26,7 +26,6 @@ This repository includes:
 - `SDM_Lantana_2023/`: Main species distribution model script for *Lantana camara*
 - `Soil_Data/`: Soil variables used as model predictors
 - `Topographic_indices/`: Elevation-derived indices
-- `Watermask_2023/`: Water mask for preprocessing
 - `vegetation_indices/`: Scripts for calculating NDVI and other indices
 
 ---
