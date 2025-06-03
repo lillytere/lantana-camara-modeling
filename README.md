@@ -37,9 +37,38 @@ These asset collections are also part of the original script:
 - **Lantana Presence Points**: `Lantana Points`  
 - **Akagera National Park Boundary**: `AOI`  
 - **Sentinel-1 (SAR)**: Speckle-filtered SAR data  
-  - Test: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_15  
-- **Sentinel-2 (spectral composites 2015–2023)**: Preprocessed imagery  
-- **Terra climate dataset (preprocessed dataset 2015–2023)**: Preprocessed climate data  
+  - 2015: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_15
+  - 2016: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_16
+  - 2017: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_17
+  - 2018: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_18
+  - 2019: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_19
+  - 2020: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_20
+  - 2021: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_21
+  - 2022: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_22
+  - 2023: https://code.earthengine.google.com/?asset=users/lillyschell7/Sen1_speckle_filtered/S1_23
+ 
+- **Sentinel-2 (spectral composites 2015–2023)**: Preprocessed imagery
+  - 2015: https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral/sen2015
+  - 2016: https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral/sen2016
+  - 2017: https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral/sen2017
+  - 2018: https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral/sen2018
+  - 2019: https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral/sen2019 
+  - 2020: https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral/sen2020
+  - 2021: https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral/sen2021
+  - 2022: https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral/sen2022
+  - 2023: https://code.earthengine.google.com/?asset=users/lillyschell7/Spectral/sen2023
+ 
+- **Terra climate dataset (preprocessed dataset 2015–2023)**: Preprocessed climate data
+  - 2015: https://code.earthengine.google.com/?asset=users/lillyschell7/TERRA_usable/Terra15_resampled_scaled
+  - 2016: https://code.earthengine.google.com/?asset=users/lillyschell7/TERRA_usable/Terra16_resampled_scaled
+  - 2017: https://code.earthengine.google.com/?asset=users/lillyschell7/TERRA_usable/Terra17_resampled_scaled
+  - 2018: https://code.earthengine.google.com/?asset=users/lillyschell7/TERRA_usable/Terra18_resampled_scaled
+  - 2019: https://code.earthengine.google.com/?asset=users/lillyschell7/TERRA_usable/Terra19_resampled_scaled
+  - 2020: https://code.earthengine.google.com/?asset=users/lillyschell7/TERRA_usable/Terra20_resampled_scaled
+  - 2021: https://code.earthengine.google.com/?asset=users/lillyschell7/TERRA_usable/Terra21_resampled_scaled
+  - 2022: https://code.earthengine.google.com/?asset=users/lillyschell7/TERRA_usable/Terra22_resampled_scaled
+  - 2023: https://code.earthengine.google.com/?asset=users/lillyschell7/TERRA_usable/Terra23_resampled_scaled
+ 
 
 ## Contents
 - `main.js` – GEE script for habitat suitability modeling  
