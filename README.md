@@ -11,7 +11,7 @@ To use the script with your own data, please:
 - Replace asset paths (e.g., AOI, training data, imagery)
 - Adjust date ranges, study area, and model parameters as needed
 
-##⚠️ Note on Data Protection
+## ⚠️ Note on Data Protection
 Please note that the road network predictor originally included in the species distribution model (SDM) has been intentionally excluded from this repository due to data protection requirements associated with sensitive spatial information. As a result, the prediction outputs generated from this script may show minor differences compared to those presented in the original publication.
 
 As a result:
